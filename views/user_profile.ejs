@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <title>
-        <%= title %>
-    </title>
-</head>
-
-<body>
-    <%- include('_header.ejs') %>
-    <button><a href="/sign_out">sign out</a></button>
-    <h2>User profile</h2>
-    <%= email  %>
-    <%= user  %>
-    
-    <%- include('_footer.ejs') %>
-</body>
-
-</html>
+        <link rel="stylesheet" href="/css/user_profile.css">
+        <h1>
+            Codeial / Profile Page
+        </h1>
+<p>
+    <%= user.name  %>
+    <%= user.email  %>
+</p>
